@@ -1,0 +1,275 @@
+* {
+    max-width: 1080px;
+    max-height: 2900px;
+}
+
+:root {
+    --bg-color: hsl(217, 78%, 16%);
+    --title-color: white;
+    --text-color: rgb(157, 169, 179);
+}
+
+h1,
+h3,
+h4,
+h6 {
+    color: var(--title-color);
+}
+h5 {
+    margin: 0px;
+}
+
+p {
+    color: var(--text-color);
+}
+span{
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 10px;
+    
+}
+
+button {
+    width: fit-content;
+    font-size: 12px;
+    border-radius: 5px;
+    border: solid;
+    border-color: var(--title-color);
+    background-color: transparent;
+    box-sizing: border-box;
+    color: var(--title-color);
+    padding: 5px;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    gap: 0px;
+}
+
+.hero-left {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.hero-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-right img {
+    width: 300px;
+    display: flex;
+    position: relative;
+    bottom: -15px;
+}
+
+.container {
+    width: 68%;
+    margin-top: 20px;
+    margin-right: 16%;
+    margin-left: 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .icons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons .icons-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--text-color);
+    border: solid 1px;
+    padding: 10px
+}
+
+.icons .icons-card p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.icons-card img {
+    width: 60px;
+    height: 50px;
+}
+
+.container-uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container-uno .sotto-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--bg-color);
+    box-sizing: border-box;
+    margin: 0px;
+    gap: 20px;
+    border-bottom: solid !important; /*nu merge */
+    border-color: var(--text-color) !important; /*nu merge*/
+}
+
+.container-uno-hero {
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+}
+
+.container-uno-hero .img{
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.container-uno-hero .hero-left{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: absolute;
+    top: 1;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.container-uno-cards {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.container-uno-cards .card{
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.container-uno-cards .card img{
+    width: 130px;
+    height: 130px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.container-uno-cards .card p {
+    padding-left: 10px;
+    margin: 0px;
+    
+}
+.container-due {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15px;
+
+}
+.container-due .services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.container-due .services .text {
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--bg-color);
+    font-size: 12px;
+    height: 260px;
+    text-align: start;
+    border-radius: 15px;
+}
+.container-due .services img {
+   width: 330px;
+   height: 260px;
+   border-radius: 15px;
+}
+
+.container-due .container-due-up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-due .container-due-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.footer .navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.footer .contact p{
+    margin: 0px;
+    font-size: 12px;
+    padding: 3px;
+}
+/*
+perche mi mette automaticamente margin intorno al testo?
+come posso fare la linea lunga qunato e il container. La linia a la stessa lunghezza del testo, non del container
+quando faccio il landing, ha uno  stesso width, COME faccio di impostare il width della pagina e il width del container. Diciamo che voglio avere il width del container 80% del width del landing
+*/

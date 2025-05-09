@@ -1,44 +1,58 @@
-* {
-    max-width: 1080px;
-    max-height: 2900px;
-}
-
 :root {
     --bg-color: hsl(217, 78%, 16%);
     --title-color: white;
     --text-color: rgb(157, 169, 179);
+    --margin-bottom-container: 25px;
+    --margin-top-container: 25px;
 }
 
-h1,
-h3,
-h4,
-h6 {
+h1 {
     color: var(--title-color);
+    margin: 50px 0px 0px 0px;
+    padding-bottom: 10px;
+    
 }
-h5 {
-    margin: 0px;
+h2{
+    color: var(--bg-color);
+    margin: 50px 50px
 }
+h3{
+    color: var(--bg-color);
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+h4 {color: var(--title-color);
+font-size: 25px}
 
 p {
+    font-size: 18px;
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 span{
     color: var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-    padding-left: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    
     
 }
 
 button {
-    width: fit-content;
     font-size: 12px;
     border-radius: 5px;
-    border: solid;
+    border: solid 1px;
     border-color: var(--title-color);
     background-color: transparent;
     box-sizing: border-box;
     color: var(--title-color);
-    padding: 5px;
+    padding: 15px;
+    margin: 10px 0px;
+    display: inline-block;
 }
 
 
@@ -67,15 +81,15 @@ button {
     display: flex;
     justify-content: center;
     background-color: var(--bg-color);
-    gap: 0px;
+    gap: 17%;
+    padding-bottom: var(--margin-bottom-container);
 }
 
 .hero-left {
-    width: 38%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
+
 
 .hero-right {
     width: 30%;
@@ -91,16 +105,16 @@ button {
 }
 
 .container {
-    width: 68%;
-    margin-top: 20px;
-    margin-right: 16%;
-    margin-left: 16%;
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
 }
 
 .container .icons {
-    margin-top: 50px;
+    width: 100%;
+    margin-top: var(--margin-top-container);
+    margin-bottom: var(--margin-bottom-container);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,164 +124,194 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     color: var(--text-color);
     border: solid 1px;
-    padding: 10px
+    padding: 10px;
+    width: 15%;
+   
 }
 
-.icons .icons-card p {
-    margin-bottom: 0;
-    margin-top: 0;
+.icons-card span {
+    margin: 0px;
+    padding: 0px;
 }
 
 .icons-card img {
     width: 60px;
     height: 50px;
+    margin-left: 5px;
 }
 
 .container-uno {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    width: 100%;
+    margin-bottom: var(--margin-bottom-container);
+    
 }
 
 .container-uno .sotto-menu{
+    width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     color: var(--bg-color);
     box-sizing: border-box;
-    margin: 0px;
     gap: 20px;
     border-bottom: solid !important; /*nu merge */
     border-color: var(--text-color) !important; /*nu merge*/
 }
 
 .container-uno-hero {
-    margin-top: 25px;
+    width: 100%;
     display: flex;
     position: relative;
+    margin-top: var(--margin-top-container);
 }
 
-.container-uno-hero .img{
+.container-uno-hero img{
+   width: 100%; 
     align-items: center;
     position: relative;
-    width: 100%;
+    
 }
 
 .container-uno-hero .hero-left{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     position: absolute;
-    top: 1;
-    margin-left: 20px;
-    margin-top: 25px;
+    top: 1000;
+    margin-left: 5%;
+    margin-top: 20%;
 }
 
 .container-uno-cards {
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: var(--margin-top-container);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: var(--margin-bottom-container);
     
 }
 
 .container-uno-cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
     background-color: var(--bg-color);
     border-radius: 15px;
-    font-size: 12px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .container-uno-cards .card img{
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 75%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.container-uno-cards .card p {
-    padding-left: 10px;
-    margin: 0px;
-    
-}
+
 .container-due {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 15px;
+    margin-bottom: var(--margin-bottom-container);
 
 }
 .container-due .services{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
 }
 
 .container-due .services .text {
-    width: 40%;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 50%;
     background-color: var(--bg-color);
-    font-size: 12px;
-    height: 260px;
-    text-align: start;
+    padding-left: var(--margin-top-container);
+    padding-top: var(--margin-top-container);
+    padding-bottom: var(--margin-bottom-container);
     border-radius: 15px;
 }
-.container-due .services img {
-   width: 330px;
-   height: 260px;
+.container-due .services .img img{
+   width: 150%;
+   height: 100%;
    border-radius: 15px;
 }
 
-.container-due .container-due-up{
+
+.container-due .services1{
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
+    height: 100%;
+}
+
+.container-due .services1 .text1 {
+    width: 53%;
+    background-color: var(--bg-color);
+    padding-left: var(--margin-top-container);
+    padding-top: var(--margin-top-container);
+    padding-bottom: var(--margin-bottom-container);
+    border-radius: 15px;
+    height: 100%;
+}
+.container-due .services1 .img1 {
+   width: 120%;
+   height: 100%;
+   border-radius: 15px;
+}
+.container-due .services1 .img1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.footer{
+    margin-top: 50px;
+    padding-top: var(--margin-top-container);
+    padding-bottom: var(--margin-bottom-container);
+    width: 100%;
+    background-color: var(--bg-color);
+
+}
+.footer .container-footer {
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.container-due .container-due-bottom{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--bg-color);
-    margin-top: 50px;
-    padding: 20px;
-}
-
-.footer img {
+.footer .container-footer img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.footer .navbar-menu {
+.footer .container-footer .navbar-menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     gap: 20px;
 }
-.footer .contact p{
-    margin: 0px;
-    font-size: 12px;
-    padding: 3px;
+.footer .container-footer .contact {
+    display: flex;
+    flex-direction: column;
 }
+
+    
 /*
 Perche mi mette automaticamente margin intorno al testo?
 Come posso fare la linea lunga qunato e il container. La linia a la stessa lunghezza del testo, non del container
